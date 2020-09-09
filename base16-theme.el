@@ -922,26 +922,26 @@ return the actual color value.  Otherwise return the value unchanged."
      (whitespace-space-after-tab                   :foreground base08 :background base0A)
      (whitespace-space-before-tab                  :foreground base08 :background base09)
      (whitespace-tab                               :foreground base03 :background base01)
-     (whitespace-trailing                          :foreground base0A :background base08)))
-
-;; Tabs
+     (whitespace-trailing                          :foreground base0A :background base08)
+     ;; Tabs
 	
 ;; tabbar
     ;; built-in tab-bar mode
-    (tab-bar (:background base01 :foreground base03))
-    (tab-line (:background base01 :foreground base03))
-    (tab-bar-tab (:background base01 :foreground base03))
-    (tab-bar-tab-inactive (:background base01 :foreground base03))
+    (tab-bar :background base01 :foreground base03)
+    (tab-line :background base01 :foreground base03)
+    (tab-bar-tab :background base01 :foreground base03)
+    (tab-bar-tab-inactive :background base01 :foreground base03)
 
     ;; Centaur-tabs
-    (centaur-tabs-default    (:background base01 :foreground bg0))
-    (centaur-tabs-selected   (:background base01 :foreground fg1))
-    (centaur-tabs-unselected (:background base00 :foreground comment))
-    (centaur-tabs-selected-modified   (:background base00 :foreground todo))
-    (centaur-tabs-unselected-modified (:background base00 :foreground todo))
-    (centaur-tabs-active-bar-face (:background base04))
-    (centaur-tabs-modified-marker-selected (:inherit base03 :foreground base04))
-    (centaur-tabs-modified-marker-unselected (:inherit base03 :foreground base04))	
+    (centaur-tabs-default    :background base01 :foreground bg0)
+    (centaur-tabs-selected   :background base01 :foreground fg1)
+    (centaur-tabs-unselected :background base00 :foreground comment)
+    (centaur-tabs-selected-modified   :background base00 :foreground todo)
+    (centaur-tabs-unselected-modified :background base00 :foreground todo)
+    (centaur-tabs-active-bar-face :background base04)
+    (centaur-tabs-modified-marker-selected :inherit base03 :foreground base04)
+    (centaur-tabs-modified-marker-unselected :inherit base03 :foreground base04)
+     ))	
 	
   ;; Anything leftover that doesn't fall neatly into a face goes here.
   (let ((base00 (plist-get theme-colors :base00))
