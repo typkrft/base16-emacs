@@ -924,6 +924,25 @@ return the actual color value.  Otherwise return the value unchanged."
      (whitespace-tab                               :foreground base03 :background base01)
      (whitespace-trailing                          :foreground base0A :background base08)))
 
+;; Tabs
+	
+;; tabbar
+    ;; built-in tab-bar mode
+    (tab-bar (:background base01 :foreground base03))
+    (tab-line (:background base01 :foreground base03))
+    (tab-bar-tab (:background base01 :foreground base03))
+    (tab-bar-tab-inactive (:background base01 :foreground base03))
+
+    ;; Centaur-tabs
+    (centaur-tabs-default    (:background base01 :foreground bg0))
+    (centaur-tabs-selected   (:background base01 :foreground fg1))
+    (centaur-tabs-unselected (:background base00 :foreground comment))
+    (centaur-tabs-selected-modified   (:background base00 :foreground todo))
+    (centaur-tabs-unselected-modified (:background base00 :foreground todo))
+    (centaur-tabs-active-bar-face (:background base04))
+    (centaur-tabs-modified-marker-selected (:inherit 'centaur-tabs-selected :foreground base04))
+    (centaur-tabs-modified-marker-unselected (:inherit 'centaur-tabs-unselected :foreground base04)))	
+	
   ;; Anything leftover that doesn't fall neatly into a face goes here.
   (let ((base00 (plist-get theme-colors :base00))
         (base01 (plist-get theme-colors :base01))
