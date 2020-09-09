@@ -939,8 +939,8 @@ return the actual color value.  Otherwise return the value unchanged."
     (centaur-tabs-selected-modified   :background base00 :foreground todo)
     (centaur-tabs-unselected-modified :background base00 :foreground todo)
     (centaur-tabs-active-bar-face :background base04)
-    (centaur-tabs-modified-marker-selected :inherit base03 :foreground base04)
-    (centaur-tabs-modified-marker-unselected :inherit base03 :foreground base04)
+    (centaur-tabs-modified-marker-selected :inherit 'centaur-tabs-selected :foreground base04)
+    (centaur-tabs-modified-marker-unselected :inherit 'centaur-tabs-unselected :foreground base04)
      ))	
 	
   ;; Anything leftover that doesn't fall neatly into a face goes here.
