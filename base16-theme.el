@@ -933,9 +933,9 @@ return the actual color value.  Otherwise return the value unchanged."
     (tab-bar-tab-inactive :background base01 :foreground base03)
 
     ;; Centaur-tabs
-    (centaur-tabs-default    :background base01 :foreground bg0)
-    (centaur-tabs-selected   :background base01 :foreground fg1)
-    (centaur-tabs-unselected :background base00 :foreground comment)
+    (centaur-tabs-default    :background base01 :foreground base03)
+    (centaur-tabs-selected   :background base01 :foreground base03)
+    (centaur-tabs-unselected :background base00 :foreground base03)
     (centaur-tabs-selected-modified   :background base00 :foreground base01)
     (centaur-tabs-unselected-modified :background base00 :foreground base01)
     (centaur-tabs-active-bar-face :background base04)
